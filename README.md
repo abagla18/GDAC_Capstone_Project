@@ -1,9 +1,21 @@
-# GDAC_Capstone_Project
- Capstone Project for Google Data Analytics Certificate
+# **Google Data Analytics - Capstone Project**
+<img src="capstone_project_image.jpg" alt="drawing" width="300"/>
+---
 
-<img src="capstone_project_image.jpg" alt="drawing" width="200"/>
+## Ask
+---
 
-# Ask
-# Prepare
-# Process
-# Analyze
+## Prepare
+---
+
+## Process
+---
+
+## Analyze
+---
+
+## Share
+---
+
+## Act
+---
