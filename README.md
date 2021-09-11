@@ -1,5 +1,5 @@
 # **Google Data Analytics - Capstone Project**
-<img src="capstone_project_image.jpg" alt="drawing" width="300"/>
+<img src="bellabeat.jpg" alt="drawing" width="300"/>
 
 ---
 
