@@ -37,6 +37,8 @@ Step 9: Now this dataframe, which is at a daily level is ready to perform analys
 
 ## Analyze
 
+**Please refer to analysis notebook for code and visualizations - 1_analysis_nb.ipynb**
+
 To help us understand how active are the users (or if they use the product on a daily basis)
     - We bin the total steps in 4 buckets - Sedentary/Light/Fairly Active/Very Active (4 buckets based on 25th percentile, median, 75th percentile)
     - Then we look at daily percent of users in each bucket
