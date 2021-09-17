@@ -47,12 +47,12 @@ These are some of the questions we are trying to answer in this study.
     - Then we look at daily percent of users in each bucket
     - Then look at average percent of users across all days.
 
-### From the Data provided we see that there is not enough data on sleep and weightlog and if the company wants to focus on those features they must gather more data of the same.
-###  -Which also means that users are not using the smart watch to track their sleep and weight actively.
+    - From the Data provided we see that there is not enough data on sleep and weightlog and if the company wants to focus on those features they must gather more data of the same.
+    - Which also means that users are not using the smart watch to track their sleep and weight actively.
 
-### -From the plot it is clear that all of the users are using the smart watch to track their steps/activity on daily basis.
-### -We also see there is a sudden spike in sedentary active which could be because of an outlier.
-### -Otherwise there is no clear pattern which can suggest that only very active or fairly active people tend to use the smart watch more than the others.
+    - From the plot it is clear that all of the users are using the smart watch to track their steps/activity on daily basis.
+    - We also see there is a sudden spike in sedentary active which could be because of an outlier.
+    - Otherwise there is no clear pattern which can suggest that only very active or fairly active people tend to use the smart watch more than the others.
 
 
 ## Share
