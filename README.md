@@ -4,11 +4,15 @@
 
 ## Ask
 
-1. How many users does the data include?
-2. How many days of data do we have?
-3. What are the different metrics available across all datasets
-4. What is the daily activity profile of each user?
-5. What is the overall activity profile of each user?<br>
+  1. How many users does the data include?
+  2. How many days of data do we have?
+  3. What are the different metrics available across all datasets
+  4. What is the daily activity profile of each user?
+  5. What is the overall activity profile of each user?
+  6. What is the Probability Distribution across some of the main metrics?
+  7. What is Hourly Average Heart Rate Profile of the users?
+  8. What sort of relation do we see between calories burned and Total Steps taken?<br>
+
 These are some of the questions we are trying to answer in this study.
 
 ## Prepare
@@ -40,22 +44,49 @@ These are some of the questions we are trying to answer in this study.
 
 ## Analyze
 
-**Please refer to analysis notebook for code and visualizations - 1_analysis_nb.ipynb**
-
-### To help us understand how active are the users (or if they use the product on a daily basis)
-    - We bin the total steps in 4 buckets - Sedentary/Light/Fairly Active/Very Active (4 buckets based on 25th percentile, median, 75th percentile)
-    - Then we look at daily percent of users in each bucket
-    - Then look at average percent of users across all days.
-
-    - From the Data provided we see that there is not enough data on sleep and weightlog and if the company wants to focus on those features they must gather more data of the same.
-    - Which also means that users are not using the smart watch to track their sleep and weight actively.
-
-    - From the plot it is clear that all of the users are using the smart watch to track their steps/activity on daily basis.
-    - We also see there is a sudden spike in sedentary active which could be because of an outlier.
-    - Otherwise there is no clear pattern which can suggest that only very active or fairly active people tend to use the smart watch more than the others.
+**Please refer to analysis notebook for code and visualizations - [Analysis Workbook](https://github.com/abagla18/GDAC_Capstone_Project/blob/main/1_analysis_nb.ipynb)**
 
 
+  ### To help us understand how active are the users (or if they use the product on a daily basis and overall across all days):
+  - We bin the total steps in 4 buckets - Sedentary/Light/Fairly Active/Very Active (4 buckets based on 25th percentile, median, 75th percentile)
+  - Then we look at daily percent of users in each bucket
+  - Then look at average percent of users across all days.
+  
+  - From the Data provided we see that there is not enough data on sleep and weightlog and if the company wants to focus on those features they must gather more data of the same.
+  - Which also means that users are not using the smart watch to track their sleep and weight activel  
+  - From the plot it is clear that all of the users are using the smart watch to track their steps/activity on daily basis.
+  - We also see there is a sudden spike in sedentary active which could be because of an outlier.
+  - Otherwise there is no clear pattern which can suggest that only very active or fairly active people tend to use the smart watch more than the others.
+    
+  ### To help us understand how actively the app is being used to track some of the main metrics we plot the PDF for these metrics:
+  - Metrics we are looking at are TotalSteps, TotalDistance, Calories, TotalMinutes, AvgHR, AvgMETs
+  - The PDFs (Probability Distribution Function) will also tell us about the activity levels of the group
+   #### Average of Total Steps:
+  - When plotted, The average of total steps shows that most population fall under 10K steps on a daily basis. Where most people complete around 8K steps/day.
+   #### Average of Total Distance:
+  - The average of total distance shows that most people complete around 6 miles of distance daily. There is also a small amount of people who cover the distance of more than 6 miles upto 12 miles per day.
+   #### Average of Calories:
+  - Most people in this study burn approximately 2000 calories on average and a small amount of people burn more than 2000 upto 3000.
+   #### Average of Total Active Minutes (very active minutes + fairly active mintues):
+  - In this graph highest activity appears to be for 20 mins. Which suggests that most people are moderately to highly active mostly for 20 minutes.    
+  ### To help us understand importance of tracking HR across the day and find if there is any specific time of day when the HR spikes or drops:
+  - As seen in the histogram we can see that heartrate is lowest during the night hours and gradually increases throughout the day with a peak around 4-5pm.
+  ### To help us understand inconsistencys in average HR across the day of week if there is any:
+  - From the graph its clear that there are no inconsistency its almost the same through out the week.
+  ### Understanding the relationship between total steps taken and calories burned on a daily basis:
+  - It is clear from the scatterplot that greater the steps greater the calorie burn.
+    
 ## Share
 
-
+  - After analyzing FitBit Fitness Tracker Data, I found some insights that would help influence Bellabeat marketing strategy.
+  - If users want to improve their sleep, Bellabeat should consider using app notifications to go to bed which can also result in gathering more sleep data from consumers.
+  - Most activity happens after 4 pm which suggests that consumers are goin for a walk or to the gym or doing HIT workouts. Bellabeat could give an option for setting up a reminder to motivate users to go for a daily activity like walk/run/swim/gym.
+  - Bellabeat could also setup Auto detection for Capturing activity depending on the HR if it is high and/or steps are increasing, more probability is the user might be doing some sort of activity.
+  - They coud also setup auto detection for sleep and calories in a similar fashion.
+     
 ## Act
+
+ - Gathering more data from Bellabeat's existing users would be highly beneficial to gain more accurate insights. But it's worth making note that Bellabeat's target audience should be women as there wasnt enough data about women's reproductive health.
+ - From the Data provided we see that there is not enough data on sleep and weightlog and if the company wants to focus on those features they must gather more data of the same.
+ - They should make changes in the app such that they motivate their consumer. Reminding them to get up and move and also log their activities and weight and calorie information to make efficient use of the product.
+- Which also means that users are not using the smart watch to track their sleep and weight actively.
